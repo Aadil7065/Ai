@@ -21,21 +21,12 @@ from telegram.ext import (
 )
 
 # ========== 🔧 CONFIGURATION (SIRF YAHAN BADALO) ==========
-TELEGRAM_TOKEN = "8732926521:AAEWoCcOAMhRMFTX49SMz2M1FSRXFUXotGQ"   # @BotFather se
-
-# 🔴 IMPORTANT: Purana token leak ho gaya. Naya banao: https://huggingface.co/settings/tokens
-HF_API_TOKEN   = "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"      # <-- YAHAN NAYA TOKEN DALO
-
-ALLOWED_USER_IDS = [8561031913]                # Tera Telegram user ID (integer)
-
-# ✅ Confirmed working uncensored model (public, free inference)
-MODEL_NAME = "huihui-ai/Qwen2.5-7B-Instruct-abliterated"
-# =========================================================
-
-# API URL automatically built
-API_URL = f"https://api-inference.huggingface.co/models/{huihui-ai/Qwen2.5-7B-Instruct-abliterated}"
+TELEGRAM_TOKEN = "8732926521:AAEWoCcOAMhRMFTX49SMz2M1FSRXFUXotGQ"
+HF_API_TOKEN   = "hf_YOUR_BRAND_NEW_TOKEN"   # 🔴 naya token
+ALLOWED_USER_IDS = [8561031913]
+MODEL_NAME = "cognitivecomputations/dolphin-2.9-llama3-8b"
+API_URL = f"https://api-inference.huggingface.co/models/{MODEL_NAME}"
 HEADERS = {"Authorization": f"Bearer {HF_API_TOKEN}"}
-
 # Conversation memory
 conversations = {}
 
